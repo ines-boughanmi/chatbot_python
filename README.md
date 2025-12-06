@@ -1,12 +1,24 @@
-Guide d'Utilisation:
 
-Étape 1 : Installer Ollama
+## 🚀 Guide d'Utilisation:
 
-Étape 2 : Télécharger le modèle LLM
-ollama pull qwen2.5:1.5b
+### 1. Prérequis
+- Python installé.
+- [Ollama](https://ollama.com/) installé et lancé.
 
-Étape 3 : Installer les dépendances Python
-pip install -r requirements_minimal.txt 
+### 2. Cloner le projet
 
-Étape 4 : Lancer l'Application
-streamlit run app.py
+
+### 3. Installer les dépendances
+- pip install -r requirements.txt
+
+### 4. Télécharger le modèle Ollama
+Assurez-vous qu'Ollama tourne, puis téléchargez un modèle léger pour le test :
+-ollama pull qwen2.5:1.5b
+
+## ▶️ Exécution
+
+***Lancez le serveur Ollama dans un terminal :
+- ollama serve
+
+***Lancez l'application Streamlit dans un autre terminal :
+- python -m streamlit run app.py
